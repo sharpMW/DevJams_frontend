@@ -8,7 +8,8 @@ module.exports = {
       'heading': "Ogg, sans-serif",
       'body': "Helvetica Nueue"
     },
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }

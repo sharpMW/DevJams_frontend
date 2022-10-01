@@ -1,6 +1,6 @@
 import React from 'react'
 import LeftArrow from '../assets/Arrows/left arrow.svg'
-import Menu from '../assets/menu.svg'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className='flex'>
                 <div className='flex'>
                     <img src={LeftArrow}/>
-                    <span>Back to myntra.com</span>
+                    <span><Link to='/'>Back to myntra.com</Link></span>
                 </div>
                 <ul className='flex space-x-4 ml-auto'>
                     <li>Login</li>
@@ -28,8 +28,8 @@ const Navbar = () => {
                     Visteria
                 </div>
                 <ul className='flex space-x-4 ml-[36vw]'>
-                    <li>Wardrobe</li>
-                    <li>Explore Trends</li>
+                    <li><Link to='/wardrobe'>Wardrobe</Link></li>
+                    <li><Link to='/trends'>Explore Trends</Link></li>
                 </ul>
             </div>
             <div className=''>
